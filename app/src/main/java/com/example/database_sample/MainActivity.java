@@ -1,6 +1,5 @@
 package com.example.database_sample;
 
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -13,7 +12,6 @@ import android.widget.EditText;
 
 import com.example.adapter.DbRecyclerAdapter;
 import com.example.database.DBHelperClass;
-import com.example.model.DBModel;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -55,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         final EditText etName = view.findViewById(R.id.etName);
         final EditText etEmail = view.findViewById(R.id.etEmail);
 
-        builder.setTitle("ADD to database");
+        /*builder.setTitle("ADD to database");
         builder.setPositiveButton("Add", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
@@ -78,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(DialogInterface dialogInterface, int i) {
 
             }
-        });
+        });*/
 
         builder.show();
     }

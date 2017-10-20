@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Database with recycler sample app</string>
+
+    <string name="hint_name">Enter your name</string>
+    <string name="hint_email">Enter your email</string>
+    <string name="label_save">Save</string>
+    <string name="label_cancel">Cancel</string>
+    <string name="label_change">Change</string>
 </resources>

@@ -1,21 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-    android:padding="10dp">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
 
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgCircle"
+        android:layout_width="@dimen/circle_image_dimen"
+        android:layout_height="@dimen/circle_image_dimen"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/dummy_profile"
+        android:layout_margin="@dimen/circle_image_margin"/>
 
-    <EditText
+    <LinearLayout
+        android:id="@+id/llChangeImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imgCircle"
+        android:layout_marginBottom="@dimen/edittext_margin_top"
+        android:background="@drawable/photo_change_background">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:srcCompat="@drawable/ic_camera"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_change"
+            android:textStyle="bold"
+            android:textAllCaps="true"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatEditText
         android:id="@+id/etName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="name"/>
+        android:background="@drawable/custom_input"
+        android:hint="@string/hint_name"
+        android:padding="@dimen/edittext_padding"
+        android:drawableLeft="@drawable/ic_name"
+        android:drawableStart="@drawable/ic_name"
+        android:drawablePadding="@dimen/edittext_drawable_padding"
+        android:layout_below="@+id/llChangeImage"
+        android:layout_marginTop="@dimen/edittext_margin_top"/>
 
-    <EditText
+    <android.support.v7.widget.AppCompatEditText
         android:id="@+id/etEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="email"/>
+        android:inputType="textEmailAddress"
+        android:hint="@string/hint_email"
+        android:background="@drawable/custom_input"
+        android:layout_marginTop="@dimen/edittext_margin_top"
+        android:padding="@dimen/edittext_padding"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="@dimen/edittext_drawable_padding"
+        android:layout_below="@+id/etName"/>
 
-</LinearLayout>
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height"
+        android:layout_below="@id/etEmail"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/button_positive"
+        android:text="@string/label_save"
+        android:textColor="@color/color_white"
+        android:layout_marginTop="@dimen/edittext_margin_top"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height"
+        android:layout_below="@id/etEmail"
+        android:background="@drawable/button_neagtive"
+        android:text="@string/label_cancel"
+        android:layout_toLeftOf="@+id/btnSave"
+        android:layout_toStartOf="@id/btnSave"
+        android:textColor="@color/color_white"
+        android:layout_marginRight="@dimen/edittext_margin_top"
+        android:layout_marginEnd="@dimen/edittext_margin_top"
+        android:layout_marginTop="@dimen/edittext_margin_top"/>
+</RelativeLayout>

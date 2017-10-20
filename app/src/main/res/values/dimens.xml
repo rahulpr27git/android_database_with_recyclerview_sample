@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="edittext_padding">5dp</dimen>
+    <dimen name="edittext_margin_top">10dp</dimen>
+    <dimen name="edittext_drawable_padding">10dp</dimen>
+    <dimen name="circle_image_dimen">120dp</dimen>
+    <dimen name="circle_image_margin">20dp</dimen>
+    <dimen name="button_height">40dp</dimen>
+</resources>

@@ -3,4 +3,12 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="color_white">#f5f5f5</color>
+
+    <color name="edittext_border_color">#757575</color>
+    <color name="transparent_input_disabled_15">#15eeeeee</color>
+    <color name="transparent_input_enabled_50">#50eeeeee</color>
+
+    <color name="button_red_color">#c62828</color>
+    <color name="button_green_color">#2e7d32</color>
 </resources>
