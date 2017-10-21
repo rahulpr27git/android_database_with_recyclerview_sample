@@ -80,6 +80,7 @@
         android:layout_marginTop="@dimen/edittext_margin_top"/>
 
     <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnCancel"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/button_height"
         android:layout_below="@id/etEmail"

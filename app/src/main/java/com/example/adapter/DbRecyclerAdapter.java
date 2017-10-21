@@ -55,7 +55,6 @@ public class DbRecyclerAdapter extends RecyclerView.Adapter<DbRecyclerAdapter.DB
     }
 
     public void add(DBModel model) {
-        int prevoiusSize = list.size();
         if (model != null) {
             list.add(model);
             notifyItemInserted(list.size());
